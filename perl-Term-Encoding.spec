@@ -6,7 +6,7 @@
 %define	pdir	Term
 %define	pnam	Encoding
 Summary:	Term::Encoding - Detect encoding of the current terminal
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	Term::Encoding - wykrywanie kodowania bieżącego terminala
 Name:		perl-Term-Encoding
 Version:	0.02
 Release:	1
@@ -18,8 +18,6 @@ Source0:	http://www.cpan.org/modules/by-module/Term/%{pdir}-%{pnam}-%{version}.t
 URL:		http://search.cpan.org/dist/Term-Encoding/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,8 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Term::Encoding is a simple module to detect an encoding the current
 terminal expects, in various ways.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Term::Encoding to prosty moduł do wykrywania w różny sposób kodowania
+oczekiwanego przez bieżący terminal.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
