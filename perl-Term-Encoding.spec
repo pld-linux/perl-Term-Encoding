@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Term
 %define	pnam	Encoding
 Summary:	Term::Encoding - Detect encoding of the current terminal
